@@ -1,0 +1,24 @@
+.nav-links {
+  color: white;
+  display: flex;
+  padding-left: 180px;
+  padding-top: 50px;
+  
+  &__img {
+    position: relative;
+    width: 35px;
+    top: -22px;
+    left: 5px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    li a {
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
