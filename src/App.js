@@ -1,13 +1,14 @@
 
-import MainPage from './pages/main-page/main-page';
-import CoffePage from './pages/coffe-page/coffe-page';
+import MainPage from './pages/main-page';
+import CoffePage from './pages/coffe-page';
+import GoodsPage from './pages/goods-page';
 
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <CoffePage/>
+      <GoodsPage/>
     </div>
   );
 }
