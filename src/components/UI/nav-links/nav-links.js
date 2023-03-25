@@ -16,17 +16,17 @@ function NavLinks(props) {
       <img src={CoffeBeans} alt="coffe beans" className='nav-links__img' style={svgStyle}/>
       <ul className='nav-links__list'>
         <li>
-          <button href="#" style={navStyle} onClick={onNavigation} data-nav='MainPage'>
+          <button href="#" style={navStyle} onClick={() => onNavigation('MainPage')}>
             Coffee house
           </button> 
         </li>
         <li>
-          <button href="#" style={navStyle} onClick={onNavigation} data-nav='CoffePage'>
+          <button href="#" style={navStyle} onClick={() => onNavigation('CoffePage')}>
             Our coffee
           </button>
         </li>
         <li>
-          <button href="#" style={navStyle} onClick={onNavigation} data-nav='GoodsPage'>
+          <button href="#" style={navStyle} onClick={() => onNavigation('GoodsPage')}>
             For your pleasure
           </button>
         </li>

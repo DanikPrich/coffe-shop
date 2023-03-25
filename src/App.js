@@ -18,8 +18,7 @@ class App extends Component{
     }
   }
 
-  onNavigation = (e) => {
-    const newPage = e.target.getAttribute('data-nav')
+  onNavigation = (newPage) => {
     this.setState({
       currentPage: newPage
     })
@@ -27,13 +26,19 @@ class App extends Component{
 
   currentPage = () => {
     switch (this.state.currentPage) {
-      case 'CoffePage': return <CoffePage onNavigation={this.onNavigation}/>;
-      case 'GoodsPage': return <GoodsPage onNavigation={this.onNavigation}/>;
-      case 'GoodsItemPage': return <GoodsItemPage onNavigation={this.onNavigation}/>;
-      default: return <MainPage onNavigation={this.onNavigation}/>
+      case 'CoffePage': return (
+        <CoffePage onNavigation={this.onNavigation}/>
+      );
+      case 'GoodsPage': return (
+        <GoodsPage onNavigation={this.onNavigation}/>
+      );
+      case 'GoodsItemPage': return (
+       <GoodsItemPage onNavigation={this.onNavigation}/>
+      );
+      default: return (
+        <MainPage onNavigation={this.onNavigation}/>
+      ) 
     }
-    
-    
   }
 
   render() {

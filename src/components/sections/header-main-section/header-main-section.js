@@ -24,7 +24,7 @@ function HeaderMainSection(props) {
               <span>Want to try our beans?</span>
             </div>
 
-            <MyButton text="More"/>
+            <MyButton text="More" onClick={() => onNavigation('MainPage')}/>
           </div>
         </div>
       </section>
