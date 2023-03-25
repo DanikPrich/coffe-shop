@@ -7,12 +7,14 @@ import GoodsSection from "../components/sections/goods-section/goods-section"
 import AboutItemSection from "../components/sections/about-item-section/about-item-section"
 
 
-function GoodsItemPage() {
+function GoodsItemPage(props) {
+  const {onNavigation} = props
+
   return(
     <>
-      <HeaderSection/>
+      <HeaderSection onNavigation={onNavigation}/>
       <AboutItemSection/>
-      <FooterSection/>
+      <FooterSection onNavigation={onNavigation}/>
     </>
   )
 }

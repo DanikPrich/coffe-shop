@@ -6,13 +6,15 @@ import SearchSection from "../components/sections/search-section/search-section"
 import GoodsSection from "../components/sections/goods-section/goods-section"
 
 
-function GoodsPage() {
+function GoodsPage(props) {
+  const {onNavigation} = props
+
   return(
     <>
-      <HeaderSection/>
+      <HeaderSection onNavigation={onNavigation}/>
       <AboutSection/>
       <GoodsSection/>
-      <FooterSection/>
+      <FooterSection onNavigation={onNavigation}/>
     </>
   )
 }

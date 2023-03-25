@@ -9,25 +9,26 @@ function NavLinks(props) {
   const navStyle = !light ? {color: 'black'} : null
   const svgStyle = !light ? {filter: 'invert(1)'} : null
   
-  return (
+  const {onNavigation} = props;
 
+  return (
     <nav className='nav-links'>
       <img src={CoffeBeans} alt="coffe beans" className='nav-links__img' style={svgStyle}/>
       <ul className='nav-links__list'>
         <li>
-          <a href="page1" style={navStyle}>
+          <button href="#" style={navStyle} onClick={onNavigation} data-nav='MainPage'>
             Coffee house
-          </a> 
+          </button> 
         </li>
         <li>
-          <a href="page2" style={navStyle}>
+          <button href="#" style={navStyle} onClick={onNavigation} data-nav='CoffePage'>
             Our coffee
-          </a>
+          </button>
         </li>
         <li>
-          <a href="page3" style={navStyle}>
+          <button href="#" style={navStyle} onClick={onNavigation} data-nav='GoodsPage'>
             For your pleasure
-          </a>
+          </button>
         </li>
       </ul>
     </nav>

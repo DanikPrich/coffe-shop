@@ -13,10 +13,13 @@
     display: flex;
     gap: 40px;
 
-    li a {
+    li button {
+      background: none;
       cursor: pointer;
       text-decoration: none;
       color: white;
+      font-size: 12px;
+      line-height: 17px;
     }
   }
 }

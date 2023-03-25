@@ -5,11 +5,13 @@ import './header-main-section.scss'
 
 import BeansLogo from '../../../img/beans/logo.svg'
 
-function HeaderMainSection() {
+function HeaderMainSection(props) {
+
+  const {onNavigation} = props
   return (
     <header className='header-main'>
       <div className="header-main__links">
-        <NavLinks light={true}/>
+        <NavLinks light={true} onNavigation={onNavigation}/>
       </div>
       <section className="hero">
         <div className='container'>

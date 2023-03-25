@@ -4,13 +4,15 @@ import OurBestSection from '../components/sections/our-best-section/our-best-sec
 import FooterSection from '../components/sections/footer-section/footer-section'
 
 
-function MainPage() {
+function MainPage(props) {
+  const {onNavigation} = props
+
   return (
     <>
-      <HeaderMainSection/>
+      <HeaderMainSection onNavigation={onNavigation}/>
       <AboutMainSection/>
       <OurBestSection/>
-      <FooterSection/>
+      <FooterSection onNavigation={onNavigation}/>
     </>
   )
 }

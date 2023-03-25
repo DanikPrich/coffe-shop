@@ -6,14 +6,15 @@ import SearchSection from "../components/sections/search-section/search-section"
 import GoodsSection from "../components/sections/goods-section/goods-section"
 
 
-function CoffePage() {
+function CoffePage(props) {
+  const {onNavigation} = props
   return(
     <>
-      <HeaderSection/>
+      <HeaderSection onNavigation={onNavigation}/>
       <AboutSection/>
       <SearchSection/>
       <GoodsSection/>
-      <FooterSection/>
+      <FooterSection onNavigation={onNavigation}/>
     </>
   )
 }
