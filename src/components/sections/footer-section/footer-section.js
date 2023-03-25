@@ -9,7 +9,6 @@ function FooterSection() {
     <footer className='footer'>
       <NavLinks light={false}/>
       <img className='footer__img' src={BeansLogo} alt="beans logo" />
-
     </footer>
   )
 }
