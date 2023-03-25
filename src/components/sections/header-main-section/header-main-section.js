@@ -8,7 +8,9 @@ import BeansLogo from '../../../img/beans/logo.svg'
 function HeaderMainSection() {
   return (
     <header className='header-main'>
-      <NavLinks/>
+      <div className="header-main__links">
+        <NavLinks light={true}/>
+      </div>
       <section className="hero">
         <div className='container'>
           <div className="hero__wrapper">
