@@ -8,7 +8,7 @@ function AboutMainSection() {
     <section className="about-us">
       <div className="container">
         <div className='about-us__wrapper'>
-          <span className="about-us__title">About Us</span>
+          <h2 className="about-us__title">About Us</h2>
           <img className='about-us__img' src={BeansLogo} alt="beans logo" />
           <span className="about-us__text">Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
             Afraid at highly months do things on at. Situation recommend objection do intention
