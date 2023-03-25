@@ -1,0 +1,48 @@
+.about {
+
+  &-item {
+    padding: 70px 0 30px 0;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 55px
+    }
+
+    &__photo{
+      width: 392px;
+      filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+    }
+    &__wrapper{
+      width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__img {
+      filter: invert(1);
+      margin-bottom: 25px;
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;  
+
+    &__price_big{
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+}
