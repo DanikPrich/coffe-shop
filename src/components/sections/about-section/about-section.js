@@ -1,11 +1,12 @@
 import BeansLogo from '../../../img/beans/logo.svg'
 
-import AboutImg from '../../../img/about/about2.jpg'
+// import AboutImg from '../../../img/about/about2.jpg'
 
 import './about-section.scss'
 
 
-function AboutSection() {
+function AboutSection(props) {
+  const AboutImg = props.aboutImage
   return (
     <section className="about">
       <div className="container">

@@ -7,11 +7,11 @@ import GoodsSection from "../components/sections/goods-section/goods-section"
 
 
 function CoffePage(props) {
-  const {onNavigation} = props
+  const {onNavigation, headerText} = props
   return(
     <>
-      <HeaderSection onNavigation={onNavigation}/>
-      <AboutSection/>
+      <HeaderSection onNavigation={onNavigation} headerText={headerText}/>
+      <AboutSection aboutImage={props.aboutImage}/>
       <SearchSection/>
       <GoodsSection/>
       <FooterSection onNavigation={onNavigation}/>
