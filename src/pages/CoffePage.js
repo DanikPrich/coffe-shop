@@ -5,13 +5,14 @@ import AboutSection from "../components/sections/AboutSection/AboutSection"
 import SearchSection from "../components/sections/SearchSection/SearchSection"
 import GoodsSection from "../components/sections/GoodsSection/GoodsSection"
 
+import aboutImage3 from '../img/about/about3.jpg'
 
-function CoffePage(props) {
-  const {headerText} = props
+
+function CoffePage() {
   return(
     <>
-      <HeaderSection headerText={headerText}/>
-      <AboutSection aboutImage={props.aboutImage}/>
+      <HeaderSection headerText={"Our Coffee"}/>
+      <AboutSection aboutImage={aboutImage3}/>
       <SearchSection/>
       <GoodsSection/>
       <FooterSection />

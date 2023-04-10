@@ -4,12 +4,11 @@ import FooterSection from "../components/sections/FooterSection/FooterSection"
 import AboutItemSection from "../components/sections/AboutItemSection/AboutItemSection"
 
 
-function GoodsItemPage(props) {
-  const {headerText} = props
+function GoodsItemPage() {
 
   return(
     <>
-      <HeaderSection headerText={headerText}/>
+      <HeaderSection headerText={"Our Coffee"}/>
       <AboutItemSection />
       <FooterSection/>
     </>
