@@ -7,9 +7,7 @@ import GoodsSection from "../components/sections/GoodsSection/GoodsSection"
 import aboutImage2 from '../img/about/about2.jpg'
 
 
-function GoodsPage(props) {
-  const {headerText} = props
-
+function GoodsPage() {
   return(
     <>
       <HeaderSection headerText={"For your pleasure"}/>
@@ -17,7 +15,7 @@ function GoodsPage(props) {
       <GoodsSection/>
       <FooterSection/>
     </>
-  )
+  ) 
 }
 
 export default GoodsPage

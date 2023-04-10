@@ -1,5 +1,5 @@
 import NavLinks from '../../NavLinks/NavLinks'
-import MyButton from '../../UI/MyButton/MyButton'
+import MyLinkButton from '../../UI/MyButton/MyLinkButton'
 
 import './headerMainSection.scss'
 
@@ -23,7 +23,7 @@ function HeaderMainSection(props) {
               <span>Want to try our beans?</span>
             </div>
 
-            <MyButton text="More"/>
+            <MyLinkButton text="More" to="/coffe"/>
           </div>
         </div>
       </section>

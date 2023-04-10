@@ -1,4 +1,6 @@
 
+import { NavLink } from 'react-router-dom';
+
 import CoffeBeans from '../../img/beans/coffee-beans.svg'
 
 import './navLinks.scss'
@@ -6,6 +8,7 @@ import './navLinks.scss'
 function NavLinks(props) {
   
   const light = props.light;
+  
   const navStyle = !light ? {color: 'black'} : null
   const svgStyle = !light ? {filter: 'invert(1)'} : null
   
@@ -14,19 +17,19 @@ function NavLinks(props) {
       <img src={CoffeBeans} alt="coffe beans" className='nav-links__img' style={svgStyle}/>
       <ul className='nav-links__list'>
         <li>
-          <button href="#" style={navStyle}>
+          <NavLink to="/" style={navStyle}>
             Coffee house
-          </button> 
+          </NavLink> 
         </li>
         <li>
-          <button href="#" style={navStyle}>
+          <NavLink to="/coffe" style={navStyle}>
             Our coffee
-          </button>
+          </NavLink>
         </li>
         <li>
-          <button href="#" style={navStyle}>
+          <NavLink to="/goods" style={navStyle}>
             For your pleasure
-          </button>
+          </NavLink>
         </li>
       </ul>
     </nav>
