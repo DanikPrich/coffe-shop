@@ -1,3 +1,5 @@
+import MyLinkButton from '../../UI/MyLinkButton/MyLinkButton'
+
 import BeansLogo from '../../../img/beans/logo.svg'
 
 import AboutImg from '../../../img/about/about1.jpg'
@@ -6,6 +8,7 @@ import './aboutItemSection.scss'
 
 
 function AboutItemSection() {
+
   return (
     <section className="about-item">
       <div className="container">
@@ -27,6 +30,7 @@ function AboutItemSection() {
                 <span><b>Price: </b></span>
                 <span className="about-text__price_big">16.99$</span>
               </div>
+              <MyLinkButton to="#" text="Back"/>
             </div>
           </div>
       </div>

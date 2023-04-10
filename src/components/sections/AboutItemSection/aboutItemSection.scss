@@ -18,7 +18,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      justify-content: space-between;
     }
 
     &__title {
@@ -43,6 +43,17 @@
     &__price_big{
       font-size: 24px;
       line-height: 35px;
+    }
+
+    a {
+      margin-left: auto;
+      color: black;
+      border: 1px solid #000000;
+      filter: none;
+
+      &:hover {
+        background-color: rgba(208, 208, 208, 0.435);
+      }
     }
   }
 }

@@ -1,11 +1,12 @@
 import NavLinks from '../../NavLinks/NavLinks'
-import MyLinkButton from '../../UI/MyButton/MyLinkButton'
+import MyLinkButton from '../../UI/MyLinkButton/MyLinkButton'
 
 import './headerMainSection.scss'
 
 import BeansLogo from '../../../img/beans/logo.svg'
 
 function HeaderMainSection(props) {
+
 
   return (
     <header className='header-main'>
